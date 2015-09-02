@@ -14,7 +14,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/json', function(request, response) {
-  response.json({
+  response.set.('X-Action-Name', 'JSON').json({
     "handle" : "@irfan3",
     "name" :
       {
